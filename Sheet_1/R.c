@@ -1,21 +1,28 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define read cin >>
-#define readd(x) \
-    int x;       \
-    cin >> x
-
+#include <stdio.h>
 int main()
 {
     int n, y, m, d;
-    read n >> y;
+    scanf("%d", &n);
     if (n > 365)
     {
         y = n / 365;
         n = n - 365;
         m = n / 30;
-        n = n - (m * 30);
-        d = n;
+        if (m <= 11)
+        {
+            n = n - (m * 30);
+        }
+        else
+        {
+            y++;
+        }
+        if (n <= 30)
+        {
+            d = n;
+        }
+        else
+        {
+        }
     }
     else if (n < 365)
     {
