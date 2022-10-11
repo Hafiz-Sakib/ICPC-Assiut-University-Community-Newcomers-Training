@@ -5,24 +5,7 @@ int main()
     char s;
     scanf("%d %c %d", &a, &s, &b);
 
-    if (s == '+')
-    {
-        printf("%d", (a + b));
-    }
-    else if (s == '-')
-    {
-        printf("%d", (a - b));
-    }
-    else if (s == '*')
-    {
-        printf("%d", (a * b));
-    }
-    else if (s == '/')
-    {
-        printf("%d", (a / b));
-    }
-
-    /* if (s == 43)
+    if (s == 43)
     {
         printf("%d", (a + b));
     }
@@ -37,7 +20,6 @@ int main()
     else if (s == 47)
     {
         printf("%d", (a / b));
-    } */
-
+    }
     return 0;
 }
