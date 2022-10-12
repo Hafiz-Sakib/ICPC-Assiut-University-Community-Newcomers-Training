@@ -3,44 +3,44 @@
 
 int main()
 {
-    int a, b, c; // 3 -2  1
-    scanf("%d%d%d", &a, &b, &c);
+    long long int a, b, c;
+    scanf("%ld%ld%ld", &a, &b, &c);
 
-    if (a > b > c)
+    if (a < b < c)
     {
-        printf("%d\n%d\n%d\n", c, b, a);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
         newLine;
-        printf("%d\n%d\n%d", a, b, c);
-    }
-    else if (a > c > b)
-    {
-        printf("%d\n%d\n%d\n", b, c, a);
-        newLine;
-        printf("%d\n%d\n%d", a, b, c);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
     }
     else if (a < c < b)
     {
-        printf("%d\n%d\n%d\n", a, c, b);
+        printf("%ld\n%ld\n%ld\n", a, c, b);
         newLine;
-        printf("%d\n%d\n%d", a, b, c);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
     }
-    else if (b > c > a)
+    else if (b < a < c)
     {
-        printf("%d\n%d\n%d\n", a, c, b);
+        printf("%ld\n%ld\n%ld\n", b, a, c);
         newLine;
-        printf("%d\n%d\n%d", a, b, c);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
     }
-    else if (c > a > b)
+    else if (b < c < a)
     {
-        printf("%d\n%d\n%d\n", b, a, c);
+        printf("%ld\n%ld\n%ld\n", b, c, a);
         newLine;
-        printf("%d\n%d\n%d", a, b, c);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
     }
-    else if (c > b > a)
+    else if (c < a < b)
     {
-        printf("%d\n%d\n%d\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", c, a, b);
         newLine;
-        printf("%d\n%d\n%d", a, b, c);
+        printf("%ld\n%ld\n%ld\n", a, b, c);
+    }
+    else if (c < b < a)
+    {
+        printf("%ld\n%ld\n%ld\n", c, b, a);
+        newLine;
+        printf("%ld\n%ld\n%ld\n", a, b, c);
     }
     return 0;
 }
