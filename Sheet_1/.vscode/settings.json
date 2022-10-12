@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "string.h": "c",
-    "conio.h": "c"
+    "conio.h": "c",
+    "iostream": "cpp"
   }
 }

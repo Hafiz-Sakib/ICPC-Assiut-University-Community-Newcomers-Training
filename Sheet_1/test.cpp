@@ -1,32 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-#define read cin >>
-#define readd(x) \
-    int x;       \
-    cin >> x
-
 int main()
 {
-    int n, y, m, d;
-    read n >> y;
-    if (n > 365)
-    {
-        y = n / 365;
-        n = n - 365;
-        m = n / 30;
-        n = n - (m * 30);
-        d = n;
-    }
-    else if (n < 365)
-    {
-        y = 0;
-        m = n / 30;
-        n = n - (m * 30);
-        d = n;
-    }
-    printf("%d years\n", y);
-    printf("%d months\n", m);
-    printf("%d days\n", d);
+    int n, m, d;
+    cin >> n;
+    cout << (n / 365) << " years" << endl;
+    m = n % 365;
+    cout << (m / 30) << " months" << endl;
+    d = m % 30;
+    cout << d << " days" << endl;
 
     return 0;
 }

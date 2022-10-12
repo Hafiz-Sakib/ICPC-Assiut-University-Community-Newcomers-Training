@@ -1,25 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    int a, b;
-    char s;
-    scanf("%d %c %d", &a, &s, &b);
+    int a, s, p, t, r;
+    scanf("%d", &a);
+    s = a / 365; /// 1
+    p = a % 365; /// 35
+    t = p / 30;
+    r = p % 30; /// 5
+    printf("%d years\n", s);
+    printf("%d months\n", t);
+    printf("%d days\n", r);
 
-    if (s == 43)
-    {
-        printf("%d", (a + b));
-    }
-    else if (s == 45)
-    {
-        printf("%d", (a - b));
-    }
-    else if (s == 42)
-    {
-        printf("%d", (a * b));
-    }
-    else if (s == 47)
-    {
-        printf("%d", (a / b));
-    }
     return 0;
 }
