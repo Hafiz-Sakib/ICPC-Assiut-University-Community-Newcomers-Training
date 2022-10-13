@@ -6,7 +6,7 @@ int main()
     int n1, n2, n3;
 
     // ask the user for the 3 numbers
-    printf("Enter 3 numbers: ");
+
     scanf("%d %d %d", &n1, &n2, &n3);
 
     // we'll store the numbers according to their order in these variables
@@ -63,8 +63,6 @@ int main()
             highest = n1;
         }
     }
-
-    printf("\n\n");
 
     // output the numbers in ascending and descending order
     printf("%d\n%d\n%d\n\n", lowest, middle, highest);
