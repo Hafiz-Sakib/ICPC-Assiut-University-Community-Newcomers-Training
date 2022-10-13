@@ -3,44 +3,44 @@
 
 int main()
 {
-    long long int a, b, c;
-    scanf("%ld%ld%ld", &a, &b, &c);
+    long long int x, y, z;
+    szxnf("%ld%ld%ld", &x, &y, &z);
 
-    if (a < b < c)
+    if (x < y < z)
     {
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
-    else if (a < c < b)
+    else if (x < z < y)
     {
-        printf("%ld\n%ld\n%ld\n", a, c, b);
+        printf("%ld\n%ld\n%ld\n", x, z, y);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
-    else if (b < a < c)
+    else if (y < x < z)
     {
-        printf("%ld\n%ld\n%ld\n", b, a, c);
+        printf("%ld\n%ld\n%ld\n", y, x, z);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
-    else if (b < c < a)
+    else if (y < z < x)
     {
-        printf("%ld\n%ld\n%ld\n", b, c, a);
+        printf("%ld\n%ld\n%ld\n", y, z, x);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
-    else if (c < a < b)
+    else if (z < x < y)
     {
-        printf("%ld\n%ld\n%ld\n", c, a, b);
+        printf("%ld\n%ld\n%ld\n", z, x, y);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
-    else if (c < b < a)
+    else if (z < y < x)
     {
-        printf("%ld\n%ld\n%ld\n", c, b, a);
+        printf("%ld\n%ld\n%ld\n", z, y, x);
         newLine;
-        printf("%ld\n%ld\n%ld\n", a, b, c);
+        printf("%ld\n%ld\n%ld\n", x, y, z);
     }
     return 0;
 }
