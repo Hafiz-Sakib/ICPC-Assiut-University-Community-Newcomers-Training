@@ -11,12 +11,20 @@ int main()
         {
             printf("Right");
         }
+        else
+        {
+            printf("Wrong");
+        }
     }
     else if (s == '=')
     {
         if (a == b)
         {
             printf("Right");
+        }
+        else
+        {
+            printf("Wrong");
         }
     }
     else if (s == '<')
