@@ -4,7 +4,7 @@
 int main()
 {
     long long int x, y, z;
-    szxnf("%ld%ld%ld", &x, &y, &z);
+    scanf("%ld%ld%ld", &x, &y, &z);
 
     if (x < y < z)
     {
