@@ -2,13 +2,12 @@
 using namespace std;
 int main()
 {
-    int n, m, d;
-    cin >> n;
-    cout << (n / 365) << " years" << endl;
-    m = n % 365;
-    cout << (m / 30) << " months" << endl;
-    d = m % 30;
-    cout << d << " days" << endl;
 
+    int L1, R1, L2, R2;
+    cin >> L1 >> R1 >> L2 >> R2;
+    if (max(L1, L2) > min(R1, R2))
+        cout << -1;
+    else
+        cout << max(L1, L2) << " " << min(R1, R2);
     return 0;
 }
