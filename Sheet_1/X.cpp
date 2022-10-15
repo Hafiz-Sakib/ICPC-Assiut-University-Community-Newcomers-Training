@@ -1,4 +1,4 @@
-/* #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -11,4 +11,4 @@ int main()
         cout << max(a, c) << " " << min(b, d);
 
     return 0;
-} */
+}
