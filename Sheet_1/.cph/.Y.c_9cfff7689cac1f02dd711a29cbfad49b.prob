@@ -1,0 +1,1 @@
+{"name":"Local: Y","url":"c:\\PU ICS Projects\\Codeforces\\Sheet_1\\Y.c","tests":[{"id":1665859110835,"input":"5 7 2 4\n","output":"80"},{"id":1665859115547,"input":"3 9 9 9","output":"87"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\PU ICS Projects\\Codeforces\\Sheet_1\\Y.c","group":"local","local":true}
