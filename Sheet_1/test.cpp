@@ -1,20 +1,26 @@
 #include <iostream>
 using namespace std;
-#define ll long long int
 int main()
 {
+    double num1, num2, num3;
+    cin >> num1 >> num2 >> num3;
 
-    ll a, b, c, d;
-    cin >> a >> b >> c >> d;
-    int v = ((a % 100) * (b % 100) * (c % 100) * (d % 100)) % 100;
+    double result = (num1 * num2) / num3;
 
-    if (v < 10)
+    long long myNumber = result;
+    double myRes = result - myNumber;
+
+    if (myRes > 0)
     {
-        cout << 0 << v << "\n";
+        cout << "double" << endl;
+    }
+    else if (myNumber <= 2147483647)
+    {
+        cout << "int" << endl;
     }
     else
     {
-        cout << v << "\n";
+        cout << "long long" << endl;
     }
     return 0;
 }

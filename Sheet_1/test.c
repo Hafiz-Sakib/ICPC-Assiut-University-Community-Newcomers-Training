@@ -1,28 +1,27 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
-    int frnd, taka, i, tstcase, t;
-    scanf("%d", &tstcase);
-    for (i = 1; i <= tstcase; i++)
+    double n, k, a, r;
+    scanf("%lf%lf%lf", &n, &k, &a);
+
+    r = (n * k) / a;
+
+    long long int temp = r;
+    double myRes = r - temp;
+
+    if (myRes > 0)
     {
-        scanf("%d%d", &taka, &frnd);
-        if ((1000 * frnd) <= taka)
-        {
-            printf("Case %d: VIP\n", i);
+        printf("Double");
         }
-        else if ((800 * frnd) <= taka)
-        {
-            printf("Case %d: Regular\n", i);
-        }
-        else if ((500 * frnd) <= taka)
-        {
-            printf("Case %d: Local\n", i);
-        }
-        else
-        {
-            printf("Case %d: Aske amar mon valo nei :(\n", i);
-        }
+    else if (temp <= 2147483647)
+    {
+        printf("int");
     }
+
+    else
+    {
+        printf("long long");
+    }
+
     return 0;
 }
