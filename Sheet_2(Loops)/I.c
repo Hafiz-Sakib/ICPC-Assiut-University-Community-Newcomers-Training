@@ -13,6 +13,7 @@ int main()
     {
         printf("%d\nYES", r);
     }
+
     else
     {
         printf("%d\nNO", r);
