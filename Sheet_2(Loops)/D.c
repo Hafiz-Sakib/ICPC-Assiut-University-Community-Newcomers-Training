@@ -19,5 +19,20 @@ int main()
         }
     }
 
+    /*  for (;;) //Infinite for loop
+    {
+        scanf("%d", &pass);
+
+        if (pass == 1999)
+        {
+            printf("Correct\n");
+            break;
+        }
+        else
+        {
+            printf("Wrong\n");
+        }
+    } */
+
     return 0;
 }
