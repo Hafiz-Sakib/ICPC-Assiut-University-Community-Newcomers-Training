@@ -120,7 +120,7 @@
  <br/>
 <br/>
 
-  <div align="center" >
+<div align="center" >
 
 <!-- Codeforces Card Started-->
 
@@ -130,6 +130,18 @@
 
 <!-- Codeforces Ratings Max && Currents Started  -->
 
+<!-- <a href="https://codeforces.com/profile/hafiz_sakib">
+    <img src="https://raw.githubusercontent.com/hafiz-sakib/cf-stats/main/output/rating.svg" alt="Leet code rating" />
+  </a>
+
+  <a href="https://codeforces.com/profile/hafiz_sakib">
+    <img src="https://raw.githubusercontent.com/hafiz-sakib/cf-stats/main/output/max_rating.svg" alt="Leet code rating" />
+  </a> -->
+
+  <!-- Test Start-->
+
+<div align="center">
+
 <a href="https://codeforces.com/profile/hafiz_sakib">
     <img src="https://raw.githubusercontent.com/hafiz-sakib/cf-stats/main/output/rating.svg" alt="Leet code rating" />
   </a>
@@ -137,6 +149,10 @@
   <a href="https://codeforces.com/profile/hafiz_sakib">
     <img src="https://raw.githubusercontent.com/hafiz-sakib/cf-stats/main/output/max_rating.svg" alt="Leet code rating" />
   </a>
+
+</div>
+
+  <!-- Test End -->
 
   <!-- Codeforces Ratings Max && Currents Ended  -->
 
