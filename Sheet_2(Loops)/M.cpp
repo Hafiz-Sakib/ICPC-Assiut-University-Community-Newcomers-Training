@@ -25,8 +25,9 @@ int main()
         }
     }
     if (counter == 0)
-
+    {
         cout << "-1";
+    }
 
     return 0;
 }
