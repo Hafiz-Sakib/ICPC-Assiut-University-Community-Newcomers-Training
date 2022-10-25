@@ -1,33 +1,17 @@
-
-
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
 
-    int i, j, primeNum;
-    bool isPrim = true;
+    int n1, n2, t1, t2, rem;
+    scanf("%d%d", &n1, &n2);
+    t1 = n1;
+    t2 = n2;
 
-    cin >> primeNum;
+    rem = __gcd(n1, n2);
 
-    for (i = 2; i <= primeNum; i++)
-    {
-        for (j = 2; j < i; j++)
-        {
-            if (i % j == 0)
-            {
-                isPrim = false;
-            }
-        }
-
-        if (isPrim == true)
-        {
-            cout << i << " ";
-        }
-
-        isPrim = true;
-    }
+    cout << rem << endl;
 
     return 0;
 }
