@@ -1,17 +1,35 @@
-#include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
+#include <bits/stdc++.h>
 int main()
 {
 
-    int n1, n2, t1, t2, rem;
-    scanf("%d%d", &n1, &n2);
-    t1 = n1;
-    t2 = n2;
-
-    rem = __gcd(n1, n2);
-
-    cout << rem << endl;
+    int x, y;
+    cin >> x >> y;
+    int check = 0;
+    for (int i = x; i <= y; i++)
+    {
+        int temp = i;
+        int flag = 1;
+        while (temp > 0)
+        {
+            int digit = temp % 10;
+            temp /= 10;
+            if (digit == 4 || digit == 7)
+                continue;
+            else
+            {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag)
+        {
+            cout << i << " ";
+            check = 1;
+        }
+    }
+    if (!check)
+        cout << -1 << "\n";
 
     return 0;
 }
