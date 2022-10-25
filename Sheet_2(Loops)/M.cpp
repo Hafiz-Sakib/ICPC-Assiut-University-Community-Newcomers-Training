@@ -1,35 +1,32 @@
+#include <iostream>
 using namespace std;
-#include <bits/stdc++.h>
 int main()
 {
-
-    int x, y;
+    int x, y, counter = 0;
     cin >> x >> y;
-    int check = 0;
     for (int i = x; i <= y; i++)
     {
-        int temp = i;
-        int flag = 1;
-        while (temp > 0)
+        int n = i;
+        bool s = 0;
+        while (n != 0)
         {
-            int digit = temp % 10;
-            temp /= 10;
-            if (digit == 4 || digit == 7)
-                continue;
-            else
+
+            short m = n % 10;
+            n /= 10;
+            if (m != 4 && m != 7)
             {
-                flag = 0;
-                break;
+                s = 1;
             }
         }
-        if (flag)
+        if (s == 0)
         {
             cout << i << " ";
-            check = 1;
+            counter++;
         }
     }
-    if (!check)
-        cout << -1 << "\n";
+    if (counter == 0)
+
+        cout << "-1";
 
     return 0;
 }
