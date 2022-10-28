@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int t;
-    scanf("%d", &t);
+    long long int t;
+    scanf("%lld", &t);
     while (t--)
     {
-        int a, rem;
-        scanf("%d", &a);
-        int i = 0;
+        long long int a, rem;
+        scanf("%lld", &a);
+        long long int i = 0;
         while (a > 0)
         {
             rem = a % 10;
-            printf("%d ", rem);
+            printf("%lld ", rem);
             a = a / 10;
         }
 
