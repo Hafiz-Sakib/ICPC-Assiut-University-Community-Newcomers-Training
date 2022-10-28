@@ -1,1 +1,0 @@
-{"name":"Local: C","url":"c:\\PU ICS Projects\\Codeforces\\Sheet_2(Loops)\\C.c","tests":[{"id":1666319941331,"input":"5\n-5 0 -3 -4 12","output":"Even: 3\nOdd: 2\nPositive: 1\nNegative: 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\PU ICS Projects\\Codeforces\\Sheet_2(Loops)\\C.c","group":"local","local":true}

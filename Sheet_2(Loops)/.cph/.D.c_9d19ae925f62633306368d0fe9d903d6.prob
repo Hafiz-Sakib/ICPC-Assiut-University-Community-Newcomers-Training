@@ -1,1 +1,0 @@
-{"name":"Local: D","url":"c:\\PU ICS Projects\\Codeforces\\Sheet_2(Loops)\\D.c","tests":[{"id":1666321134944,"input":"2200\n1020\n1999\n1000\n9999\n","output":"Wrong\nWrong\nCorrect\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\PU ICS Projects\\Codeforces\\Sheet_2(Loops)\\D.c","group":"local","local":true}

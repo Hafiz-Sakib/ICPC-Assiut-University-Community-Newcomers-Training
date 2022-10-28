@@ -18,8 +18,6 @@ int main()
         }
     }
 
-    sort(k, s);
-
     cout << count << endl;
 
     return 0;
