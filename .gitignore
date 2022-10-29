@@ -1,15 +1,12 @@
-
 # Prerequisites
 *.d
 
-# Object files
+# Object Files
 *.o
 *.ko
 *.obj
-*.elf
 
 # Linker output
-*.ilk
 *.map
 *.exp
 
