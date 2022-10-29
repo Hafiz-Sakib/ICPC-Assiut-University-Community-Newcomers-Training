@@ -6,7 +6,7 @@ int main()
     while (t--)
     {
         int a, b, sum = 0;
-        scanf("%d %d", &a, &b);
+        scanf("%d%d", &a, &b);
         if (a < b)
         {
             for (int i = (a + 1); i < b; i++)
