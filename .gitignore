@@ -1,7 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c
-# Edit at https://www.toptal.com/developers/gitignore?templates=c
-
-### C ###
 # Prerequisites
 *.d
 
@@ -39,6 +35,8 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
+*.prob
 
 # Debug files
 *.dSYM/
@@ -55,44 +53,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-
-# Created by https://www.toptal.com/developers/gitignore/api/c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++
-
-### C++ ###
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# End of https://www.toptal.com/developers/gitignore/api/c++
-
-# End of https://www.toptal.com/developers/gitignore/api/c
+# End of https://mrkandreev.name/snippets/gitignore-generator/#C
