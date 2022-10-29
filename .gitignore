@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+*.prob
+*.bin
 
 # Packages #
 ############
@@ -19,6 +21,8 @@
 *.rar
 *.tar
 *.zip
+*.prob
+*.bin
 
 # Logs and databases #
 ######################
