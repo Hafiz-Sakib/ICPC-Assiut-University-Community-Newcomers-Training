@@ -8,15 +8,15 @@ int main()
     {
 
         int n, m, sum = 0, i;
-        scanf("%d %d", &n, &m);
+        scanf("%d %d", &m, &n);
 
-        if (n <= 0 || m <= 0)
+        if (m <= 0 || n <= 0)
         {
             break;
         }
 
-        int mini = min(n, m);
-        int maxi = max(n, m);
+        int mini = min(m, n);
+        int maxi = max(m, n);
 
         for (i = mini; i <= maxi; i++)
         {
