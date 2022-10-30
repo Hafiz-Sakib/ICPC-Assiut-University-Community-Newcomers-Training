@@ -1,25 +1,22 @@
-#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n, a, b, sum = 0;
     cin >> n >> a >> b;
-    for (int i = 1; i <= n; i++)
+    n++;
+    while (n--)
     {
-        int x = i, s = 0;
-        while (x > 0)
+        int x = n, d_sum = 0;
+        while (x != 0)
         {
-            int z = x % 10;
-            s += z;
-            x /= 10;
+            int r = x % 10;
+            x = x / 10;
+            d_sum += r;
         }
-        if (s >= a && s <= b)
-        {
-            sum += i;
-        }
+        if (d_sum >= a && d_sum <= b)
+            sum += n;
     }
     cout << sum;
-
     return 0;
 }
