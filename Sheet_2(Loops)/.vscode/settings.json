@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "valarray": "cpp",
-    "iostream": "cpp",
-    "iosfwd": "cpp"
-  }
-}
