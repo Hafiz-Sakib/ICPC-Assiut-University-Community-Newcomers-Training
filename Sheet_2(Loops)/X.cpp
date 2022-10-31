@@ -16,7 +16,6 @@ int main()
             {
                 c++;
             }
-
             n = n / 2;
         }
         for (int i = 0; i < c; i++)
