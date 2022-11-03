@@ -20,14 +20,21 @@ using namespace std;
 #define read1   \
     long int a; \
     cin >> a;
-#define write1 \
-    cout << a << newline;
-#define write2 \
-    cout << a << newline << b << newline;
-#define write3 \
-    cout << a << newline << b << newline << c << newline;
+#define write1 cout << a << newline;
+#define write2 cout << a << newline << b << newline;
+#define write3 cout << a << newline << b << newline << c << newline;
+#define fr(a, b) for (int i = a; i < b; i++)
+#define rep(i, a, b) for (int i = a; i < b; i++)
 int main()
 {
+    Boost;
+
+    int t = 1;
+    cin >> t;
+    while (t--)
+    {
+        // cout<<"Case "<<t<<" : ";
+    }
 
     return 0;
 }
