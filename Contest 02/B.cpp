@@ -28,6 +28,32 @@ using namespace std;
     cout << a << newline << b << newline << c << newline;
 int main()
 {
+    Boost;
+    int a;
+    cin >> a;
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+            if (i == j && i != a / 2 && j != a / 2)
+            {
+                cout << "\\";
+            }
+            else if (i == a / 2 && j == a / 2)
+            {
+                cout << "X";
+            }
+            else if (j != a / 2 && i == ((a - 1) - j))
+            {
+                cout << "/";
+            }
+            else
+            {
+                cout << "*";
+            }
+        }
+        cout << newline;
+    }
 
     return 0;
 }
