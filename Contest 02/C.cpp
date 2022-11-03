@@ -29,19 +29,19 @@ int main()
 {
     Boost;
 
-    int n, r, minn = pow(10, 9), counter = 0;
+    int n, r, mini = pow(10, 9), counter = 0;
     cin >> n >> r;
     for (int i = 1; i <= n; i++)
     {
         int val;
         cin >> val;
-        minn = min(minn, val);
+        mini = min(mini, val);
         counter++;
         if (counter == r || i == n)
         {
-            cout << minn << " ";
+            cout << mini << " ";
             counter = 0;
-            minn = pow(10, 9);
+            mini = pow(10, 9);
         }
     }
 
