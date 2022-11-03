@@ -9,15 +9,15 @@ int main()
 {
     Boost;
 
-    int n, r, mini = INT_MAX, counter = 0;
-    cin >> n >> r;
+    int n, k, mini = INT_MAX, counter = 0;
+    cin >> n >> k;
     for (int i = 1; i <= n; i++)
     {
         int val;
         cin >> val;
         mini = min(mini, val);
         counter++;
-        if (counter == r || i == n)
+        if (counter == k || i == n)
         {
             cout << mini << " ";
             counter = 0;
