@@ -1,33 +1,70 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
+#define Boost                         \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);                    \
+    cout.tie(NULL)
+#define cY cout << "YES\n"
+#define cN cout << "NO\n"
+#define cy cout << "Yes\n"
+#define cn cout << "No\n"
+#define space ' '
+#define newline "\n"
+#define read3         \
+    long int a, b, c; \
+    cin >> a >> b >> c;
+#define read2      \
+    long int a, b; \
+    cin >> a >> b;
+#define read1   \
+    long int a; \
+    cin >> a;
+#define write1 cout << a << newline;
+#define write2 cout << a << newline << b << newline;
+#define write3 cout << a << newline << b << newline << c << newline;
+#define fr(a, b) for (int i = a; i < b; i++)
+#define rep(i, a, b) for (int i = a; i < b; i++)
 int main()
 {
-    long long t_size, n_limit, s_sum, sum, j, sub;
-    cin >> t_size;
-    for (int i = 0; i < t_size; i++)
+    Boost;
+    long long int counter;
+    long long int res[100000];
+    cin >> counter;
+    long long int cou = 0;
+    for (int i = 0; i < counter; i++)
     {
-        cin >> n_limit >> s_sum;
-        j = n_limit;
-        sum = s_sum;
-        if (n_limit * (n_limit + 1) < s_sum) // print -1 if imposible
-            cout << -1 << endl;
+        long long int num1, num2;
+        cin >> num1 >> num2;
+        if (num1 * (num1 + 1) / 2 < num2)
+        {
+            cout << -1;
+        }
         else
         {
-            for (int j = n_limit; j > 0; j--)
+            long long int sum = 0;
+
+            for (int z = num1; z >= 1; z--)
             {
-                if (sum - j >= 0)
+                if (sum + z <= num2)
                 {
-                    if (0 <= sum)
-                    {
-                        cout << j << " ";
-                        sum -= j;
-                    }
+                    sum += z;
+                    res[cou] = z;
+                    cou++;
                 }
-                if (0 == sum)
+                if (sum == num2)
+                {
                     break;
+                }
             }
         }
-        cout << endl;
+        for (int x = 0; x < cou; x++)
+        {
+            cout << res[x] << space;
+        }
+        cout << newline;
+        cou = 0;
     }
+
+    return 0;
 }
