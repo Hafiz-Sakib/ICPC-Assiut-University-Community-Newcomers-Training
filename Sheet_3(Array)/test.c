@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <limits.h>
 int main()
 {
-    int size, MAX = 1000, i, j, temp;
-    int array[MAX];
+    int size, i, j, count, min = INT_MIN;
 
     printf("Enter The Array Size :\n");
     scanf("%d", &size);
+
+    int array[size], frequency[size];
 
     for (i = 0; i < size; i++)
     {
@@ -18,25 +20,34 @@ int main()
         printf("%d ", array[i]);
     }
 
-    // Sorting in Ascending Order
+    printf("\n");
 
     for (i = 0; i < size; i++)
     {
-        for (j = i + 1; j < size; j++)
+        count = 1;
+        if (array[i] != min)
         {
-            if (array[i] > array[j])
+            for (j = 0; j < size; j++)
             {
-                temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
+                if (array[i] == array[j] && i != j)
+                {
+                    count++;
+                    array[j] = min;
+                }
             }
+            frequency[i] = count;
         }
     }
-    printf("\nNumbers of Your Array after sort are:\n");
+
     for (i = 0; i < size; i++)
     {
-        printf("%d ", array[i]);
+        if (array[i] != min)
+        {
+            printf("%d is present %d times\n", array[i], frequency[i]);
+        }
     }
 
     return 0;
 }
+
+/* if needed to reawatch the logic https://youtu.be/jKFsTTctXF0 */
