@@ -29,8 +29,8 @@ int main()
 {
     Boost;
 
-    long long int size, numbers;
-    cin >> size >> numbers;
+    long long int size, t;
+    cin >> size >> t;
     long long int a[size];
     for (int i = 0; i < size; i++)
     {
@@ -39,9 +39,8 @@ int main()
 
     sort(a, a + size);
 
-    while (numbers--)
+    while (t--)
     {
-
         long long int desired, first = 0, last = (size - 1), middle;
         cin >> desired;
         while (first <= last)
