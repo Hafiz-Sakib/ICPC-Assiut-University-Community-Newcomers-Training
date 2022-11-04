@@ -29,8 +29,8 @@ int main()
 {
     Boost;
 
-    long long int size, counter = 0;
-    cin >> size;
+    long long int size, numbers;
+    cin >> size >> numbers;
     long long int a[size];
     for (int i = 0; i < size; i++)
     {
@@ -39,30 +39,34 @@ int main()
 
     sort(a, a + size);
 
-    long long int desired, first = 0, last = (size - 1), middle;
-    cin >> desired;
-    while (first <= last)
+    while (numbers--)
     {
-        middle = (first + last) / 2;
-        if (a[middle] == desired)
-        {
-            //  cout << "location is : " << middle + 1 << newline;
-            cout << "found" << newline;
-            break;
-        }
-        else if (a[middle] < desired)
-        {
-            first = middle + 1;
-        }
-        else
-        {
-            last = middle - 1;
-        }
-    }
 
-    if (first > last)
-    {
-        cout << "not found" << newline;
+        long long int desired, first = 0, last = (size - 1), middle;
+        cin >> desired;
+        while (first <= last)
+        {
+            middle = (first + last) / 2;
+            if (a[middle] == desired)
+            {
+                //  cout << "location is : " << middle + 1 << newline;
+                cout << "found" << newline;
+                break;
+            }
+            else if (a[middle] < desired)
+            {
+                first = middle + 1;
+            }
+            else
+            {
+                last = middle - 1;
+            }
+        }
+
+        if (first > last)
+        {
+            cout << "not found" << newline;
+        }
     }
 
     return 0;
