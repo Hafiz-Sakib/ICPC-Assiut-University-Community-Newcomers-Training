@@ -1,25 +1,25 @@
-///Bismillahir Rahmanir Rahim
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int
-main ()
+int main()
 {
-#ifndef ONLINE_JUDGE
-  freopen ("input.txt", "r", stdin);
-  freopen ("output.txt", "w", stdout);
-#endif
-
-  int a, b, k = 0, p = 0, i;
+  int a, b, c = 0;
+  cin >> a >> b;
   string s;
-  cin >> a >> b >> s;
-  if (s[a] == 45)
-    p++;
-  for (i = 0; i < (int) s.size (); i++)
+  cin >> s;
+  for (int i = 0; i < (a + b + 1); i++)
+  {
+    if (s[i] == '-')
     {
-      if (i == a)
-	continue;
-      else if (!(s[i] >= 48 && s[i] <= 57))
-	k++;
+      c = i + 1;
     }
-  (k == 0 && p == 1) ? cout << "Yes" : cout << "No";
+  }
+  if (c == (a + 1))
+  {
+
+    cout << "Yes";
+  }
+  else
+  {
+    cout << "No";
+  }
 }
