@@ -6,7 +6,7 @@ int main()
   cin >> a >> b;
   string s;
   cin >> s;
-  for (int i = 0; i < (a + b + 1); i++)
+  for (int i = 0; i < s.length(); i++) // i < (a + b + 1) etao kaj korbe
   {
     if (s[i] == '-')
     {
