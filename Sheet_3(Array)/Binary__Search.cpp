@@ -6,6 +6,7 @@ using namespace std;
     cout.tie(NULL)
 #define space ' '
 #define newline "\n"
+
 int main()
 {
     Boost;
@@ -27,7 +28,6 @@ int main()
         middle = (first + last) / 2;
         if (a[middle] == desired)
         {
-            //  cout << "location is : " << middle + 1 << newline;
             cout << "found" << newline;
             break;
         }
