@@ -47,15 +47,7 @@ int main()
         }
     }
 
-    if (f)
-    {
-        cout << cnt << endl;
-    }
-    else
-    {
-
-        cout << 0 << endl;
-    }
+    cout << cnt << endl;
 
     return 0;
 }
